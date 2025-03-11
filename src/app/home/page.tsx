@@ -21,7 +21,7 @@ const Jumbotron = () => {
           FRESH COFFEE AND
           <br /> MEAL
         </h1>
-        <p className="text-lg text-gray-200 mt-4">
+        <p className="text-lg text-gray-200 mt-4" rel="preload">
           We are one of the cafes that offer high-quality products and services,
           with a guarantee of customer satisfaction. Everything you experience
           here is memorable, with unique and delicious tastes. Furthermore, we
