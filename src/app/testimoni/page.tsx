@@ -117,15 +117,15 @@ const Testimonial = () => {
 
           {/* Navigation Buttons */}
           <button
-            name="btn-ts"
+            name="arrowLeft"
             ref={prevRef}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 shadow-md rounded-full hover:bg-gray-100 z-10"
           >
             <FaArrowLeft />
           </button>
           <button
-            name="btn-tr"
             ref={nextRef}
+            name="arrowRight"
             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#D29034] text-white p-3 shadow-md rounded-full hover:bg-[#b4762a] z-10"
           >
             <FaArrowRight />

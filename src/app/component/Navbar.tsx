@@ -34,21 +34,16 @@ const Navbar = () => {
           <Link href="/menu" className={`hover:text-[#ed494f]`}>
             Product
           </Link>
-          <Link href="/teams" className={`hover:text-[#ed494f]`}>
-            Product
+          <Link href="/team" className={`hover:text-[#ed494f]`}>
+            Team
           </Link>
         </div>
         <Button
           name="contact"
           variant="outline"
-          className="border-purple hidden text-black ml-2 md:block hover:text-[#b6895b]"
+          className="border-purple hidden text-black hover:text-[#ed494f] ml-2 md:block"
         >
-          <Link
-            href="#footer"
-            className="inline-block min-w-[48px] min-h-[48px] px-4 py-2 text-blue-700 hover:text-blue-900 underline"
-          >
-            Contact
-          </Link>
+          <Link href="/footer">Contact</Link>
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger className="block md:hidden">

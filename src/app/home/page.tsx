@@ -31,7 +31,7 @@ const Jumbotron = () => {
         <motion.button
           name="order-home"
           whileHover={{ scale: 1.05 }}
-          className="min-w-[48px] min-h-[48px] px-6 py-3 bg-yellow-700 text-white font-bold hover:bg-yellow-800 text-lg rounded-lg"
+          className="min-w-[48px] min-h-[48px] px-6 py-3 bg-yellow-500 text-black font-bold text-lg rounded-lg"
         >
           <Link href="/menu">ORDER NOW</Link>
         </motion.button>

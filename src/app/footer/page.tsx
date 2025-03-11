@@ -20,7 +20,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Your email"
-              className="bg-[#C3833D] text-white placeholder-gray-300 px-6 py-3 rounded-full outline-none w-80"
+              className="bg-[#C3833D] text-white placeholder-gray-100 px-6 py-3 rounded-full outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#C3833D]"
             />
             <button
               name="arrow"

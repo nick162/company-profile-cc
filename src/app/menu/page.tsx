@@ -96,7 +96,7 @@ const MenuDrink = () => {
                 <p className="text-gray-500 text-sm">{drink.size}</p>
                 <p className="text-[#D29034] font-bold">{drink.price}</p>
                 <button
-                  name="order-now"
+                  name="orderNow"
                   className="button-order mt-2 font-semibold text-1xl bg-black text-white w-[120px] h-[50px] rounded-lg"
                 >
                   Order Now
