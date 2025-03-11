@@ -69,6 +69,7 @@ const MenuDrink = () => {
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             {drinkCategories.map((category, index) => (
               <button
+                name="btn-drink-category"
                 key={index}
                 className="border border-gray-500 px-4 py-2 text-sm rounded-full hover:bg-gray-800 hover:text-white transition"
               >
@@ -94,7 +95,10 @@ const MenuDrink = () => {
                 <h3 className="mt-4 font-semibold text-lg">{drink.name}</h3>
                 <p className="text-gray-500 text-sm">{drink.size}</p>
                 <p className="text-[#D29034] font-bold">{drink.price}</p>
-                <button className="button-order mt-2 font-semibold text-1xl bg-black text-white w-[120px] h-[50px] rounded-lg">
+                <button
+                  name="order-now"
+                  className="button-order mt-2 font-semibold text-1xl bg-black text-white w-[120px] h-[50px] rounded-lg"
+                >
                   Order Now
                 </button>
               </div>

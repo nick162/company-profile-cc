@@ -67,6 +67,7 @@ const FoodMenu = () => {
         <div className="flex flex-wrap justify-center gap-3 mt-6">
           {categories.map((category, index) => (
             <button
+              name="category"
               key={index}
               className="border border-gray-500 px-4 py-2 text-sm rounded-full hover:bg-gray-800 hover:text-white transition"
             >
@@ -92,7 +93,10 @@ const FoodMenu = () => {
               <h3 className="mt-4 font-semibold text-lg">{food.name}</h3>
               <p className="text-gray-500 text-sm">{food.weight}</p>
               <p className="text-[#D29034] font-bold">{food.price}</p>
-              <button className="button-order mt-2 font-semibold text-1xl bg-black text-white w-[120px] h-[50px] rounded-lg">
+              <button
+                name="order"
+                className="button-order mt-2 font-semibold text-1xl bg-black text-white w-[120px] h-[50px] rounded-lg"
+              >
                 Order Now
               </button>
             </div>

@@ -67,6 +67,7 @@ const Contact = () => {
                 required
               />
               <button
+                name="btn-sbm"
                 type="submit"
                 className="w-full bg-[#8B5A2B] text-white py-3 rounded-md hover:bg-[#6C4F32] transition"
               >

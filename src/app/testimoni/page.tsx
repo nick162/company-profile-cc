@@ -89,7 +89,7 @@ const Testimonial = () => {
               <SwiperSlide key={index}>
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm mx-auto">
                   <h2 className="font-semibold">So Tasty</h2>
-                  <p className="text-gray-600 text-sm mt-2">
+                  <p className="text-gray-800 text-sm mt-2">
                     {testimonial.review}
                   </p>
 
@@ -103,7 +103,7 @@ const Testimonial = () => {
                       height={16}
                     />
                     <h3 className="mt-2 font-semibold">{testimonial.name}</h3>
-                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    <p className="text-gray-800 text-sm">{testimonial.role}</p>
 
                     {/* Star Rating */}
                     <div className="flex mt-2 text-yellow-500">
@@ -117,12 +117,14 @@ const Testimonial = () => {
 
           {/* Navigation Buttons */}
           <button
+            name="btn-ts"
             ref={prevRef}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 shadow-md rounded-full hover:bg-gray-100 z-10"
           >
             <FaArrowLeft />
           </button>
           <button
+            name="btn-tr"
             ref={nextRef}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#D29034] text-white p-3 shadow-md rounded-full hover:bg-[#b4762a] z-10"
           >

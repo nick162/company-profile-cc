@@ -45,7 +45,7 @@ const Navbar = () => {
         >
           <Link
             href="#footer"
-            className="inline-block min-w-[48px] min-h-[48px] px-4 py-2 text-blue-500 underline"
+            className="inline-block min-w-[48px] min-h-[48px] px-4 py-2 text-blue-700 hover:text-blue-900 underline"
           >
             Contact
           </Link>
