@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer id="footer" className="bg-[#8B5A2B] text-white py-10">
@@ -20,7 +22,10 @@ const Footer = () => {
               placeholder="Your email"
               className="bg-[#C3833D] text-white placeholder-white px-6 py-3 rounded-full outline-none w-80"
             />
-            <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
+            <button
+              name="arrow"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2"
+            >
               ➜
             </button>
           </div>
@@ -66,33 +71,33 @@ const Footer = () => {
         {/* Bottom Links & Social Icons */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-200">
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white">
+            <Link href="#" className="hover:text-white">
               Coffee Menu
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="#" className="hover:text-white">
               Coffee For Home
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="#" className="hover:text-white">
               Our News
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="#" className="hover:text-white">
               Contact Us
-            </a>
+            </Link>
           </div>
 
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a
+            <Link
               href="#"
               className="w-8 h-8 flex items-center justify-center border rounded-full"
             >
               📷
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="w-8 h-8 flex items-center justify-center border rounded-full"
             >
               📘
-            </a>
+            </Link>
           </div>
         </div>
       </div>

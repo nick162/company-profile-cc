@@ -16,15 +16,15 @@ const Navbar = () => {
     <nav className="bg-transparent absolute top-0 left-0 w-full z-50">
       <div className="container mx-auto px-6 lg:px-16 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a
+        <Link
           className="text-white text-2xl font-bold flex items-center gap-2"
           href="/"
         >
           ☕ COFFEE MANTAN
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-white font-medium">
+        <div className="hidden md:flex space-x-6 text-white font-medium">
           <Link href="/" className={`hover:text-[#ed494f]`}>
             Home
           </Link>
@@ -37,12 +37,18 @@ const Navbar = () => {
           <Link href="/teams" className={`hover:text-[#ed494f]`}>
             Product
           </Link>
-        </ul>
+        </div>
         <Button
+          name="contact"
           variant="outline"
           className="border-purple hidden text-black ml-2 md:block hover:text-[#b6895b]"
         >
-          <Link href="#footer">Contact</Link>
+          <Link
+            href="#footer"
+            className="inline-block min-w-[48px] min-h-[48px] px-4 py-2 text-blue-500 underline"
+          >
+            Contact
+          </Link>
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger className="block md:hidden">

@@ -7,7 +7,7 @@ const Jumbotron = () => {
   return (
     <section
       className="relative h-screen bg-cover bg-center flex items-center text-white px-6 md:px-16 home"
-      style={{ backgroundImage: "url('/bg-kopi.jpg')" }}
+      style={{ backgroundImage: "url('/bg-kopi.avif')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
@@ -30,7 +30,7 @@ const Jumbotron = () => {
         </p>
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className="mt-6 px-6 py-3 bg-yellow-600 text-white font-semibold text-lg rounded-lg shadow-lg"
+          className="min-w-[48px] min-h-[48px] px-6 py-3 bg-yellow-600 text-white font-semibold text-lg rounded-lg"
         >
           <Link href="/menu">ORDER NOW</Link>
         </motion.button>
