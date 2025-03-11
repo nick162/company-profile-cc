@@ -7,7 +7,7 @@ const Jumbotron = () => {
   return (
     <section
       className="relative h-screen bg-cover bg-center flex items-center text-white px-6 md:px-16 home"
-      style={{ backgroundImage: "url('/flip-kopi.png')" }}
+      style={{ backgroundImage: "url('/bg-kopi.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
