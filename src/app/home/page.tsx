@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Jumbotron = () => {
   return (
@@ -16,7 +17,7 @@ const Jumbotron = () => {
         transition={{ duration: 0.8 }}
         className="relative z-10 max-w-2xl"
       >
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-2xl md:text-4xl font-bold leading-tight">
           FRESH COFFEE AND
           <br /> MEAL
         </h1>
@@ -31,7 +32,7 @@ const Jumbotron = () => {
           whileHover={{ scale: 1.05 }}
           className="mt-6 px-6 py-3 bg-yellow-600 text-white font-semibold text-lg rounded-lg shadow-lg"
         >
-          <a href="/menu">ORDER NOW</a>
+          <Link href="/menu">ORDER NOW</Link>
         </motion.button>
       </motion.div>
     </section>

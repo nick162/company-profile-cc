@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section
@@ -17,9 +19,9 @@ const Hero = () => {
           Masa-masa indah bersama mantan akan terbawa dalam memori kehidupan
           yang terus berjalan, jadikan dia batu pijakan untuk kesuksesan anda.
         </p>
-        <a href="" className="cta">
+        <Link href="/menu" className="cta">
           Beli Sekarang
-        </a>
+        </Link>
       </main>
     </section>
   );

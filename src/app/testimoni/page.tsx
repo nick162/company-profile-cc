@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -94,10 +95,12 @@ const Testimonial = () => {
 
                   {/* Profile */}
                   <div className="mt-6 flex flex-col items-center">
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-300"
+                      className="rounded-full object-cover border-2 border-gray-300"
+                      width={16}
+                      height={16}
                     />
                     <h3 className="mt-2 font-semibold">{testimonial.name}</h3>
                     <p className="text-gray-400 text-sm">{testimonial.role}</p>

@@ -9,6 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -24,32 +25,24 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-white font-medium">
-          <li>
-            <a href="/" className={`hover:text-[#ed494f]`}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:text-[#ed494f]">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/menu" className="hover:text-[#ed494f]">
-              Produk
-            </a>
-          </li>
-          <li>
-            <a href="/team" className="hover:text-[#ed494f]">
-              Teams
-            </a>
-          </li>
+          <Link href="/" className={`hover:text-[#ed494f]`}>
+            Home
+          </Link>
+          <Link href="/about" className={`hover:text-[#ed494f]`}>
+            About
+          </Link>
+          <Link href="/menu" className={`hover:text-[#ed494f]`}>
+            Product
+          </Link>
+          <Link href="/teams" className={`hover:text-[#ed494f]`}>
+            Product
+          </Link>
         </ul>
         <Button
           variant="outline"
           className="border-purple hidden text-black ml-2 md:block hover:text-[#b6895b]"
         >
-          <a href="#footer">Contact</a>
+          <Link href="#footer">Contact</Link>
         </Button>
         <DropdownMenu>
           <DropdownMenuTrigger className="block md:hidden">
