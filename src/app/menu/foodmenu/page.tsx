@@ -77,19 +77,18 @@ const FoodMenu = () => {
         </div>
 
         {/* Food Grid - Displays all 6 items */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {foodItems.map((food, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition"
-            >
-              <Image
-                src={food.image}
-                alt={food.name}
-                width={300}
-                height={300}
-                className="rounded-lg object-cover w-full"
-              />
+            <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
+              <div className="w-full flex justify-center">
+                <Image
+                  src={food.image}
+                  alt={food.name}
+                  width={300}
+                  height={300}
+                  className="w-full max-w-xs h-auto rounded-lg object-cover"
+                />
+              </div>
               <h3 className="mt-4 font-semibold text-lg">{food.name}</h3>
               <p className="text-gray-500 text-sm">{food.weight}</p>
               <p className="text-[#D29034] font-bold">{food.price}</p>

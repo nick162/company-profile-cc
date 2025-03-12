@@ -27,7 +27,7 @@ const foodMenu = [
     image: "/honey-bread.png",
   },
   {
-    name: "Pancake With Blubbery and Honey",
+    name: "Pancake With Blueberry and Honey",
     price: "$9.00",
     weight: "400 gr",
     image: "/pancake.png",
@@ -93,18 +93,28 @@ const FoodMenu = () => {
           <SwiperSlide key={index}>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-white p-4 rounded-lg shadow-lg text-center"
+              className="bg-white p-4 rounded-lg shadow-lg flex flex-col text-center"
             >
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={300}
-                height={300}
-                className="rounded-lg w-full h-auto"
-              />
+              {/* Gambar dalam card */}
+              <div className="w-full h-[200px] md:h-[250px] lg:h-[300px] relative">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+
+              {/* Text content */}
               <h3 className="text-lg font-semibold mt-4">{item.name}</h3>
               <p className="text-gray-500">{item.weight}</p>
               <p className="text-lg font-bold mt-2">{item.price}</p>
+              <button
+                name="orderButton"
+                className="bg-black text-white px-4 py-2 mt-3 rounded-lg"
+              >
+                Order Now
+              </button>
             </motion.div>
           </SwiperSlide>
         ))}

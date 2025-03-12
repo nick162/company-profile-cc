@@ -50,8 +50,7 @@ const coffeeMenu = [
 const Menu = () => {
   return (
     <>
-      {" "}
-      <section className="bg-[#F3E5D8] py-12 px-6 md:px-16 lg:px-24 text-gray-900 menu">
+      <section className="bg-[#F3E5D8] py-12 px-6 md:px-16 lg:px-24 text-gray-900">
         <div className="text-center">
           <h2 className="text-4xl font-bold">COFFEE MENU</h2>
           <p className="text-lg text-gray-600 mt-2">
@@ -96,18 +95,28 @@ const Menu = () => {
             <SwiperSlide key={index}>
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-white p-4 rounded-lg shadow-lg text-center"
+                className="bg-white p-4 rounded-lg shadow-lg flex flex-col text-center"
               >
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={300}
-                  height={300}
-                  className="rounded-lg w-full h-auto"
-                />
+                {/* Image container untuk membuat gambar tetap responsif */}
+                <div className="w-full h-[200px] md:h-[250px] lg:h-[300px] relative">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+
+                {/* Text Content */}
                 <h3 className="text-lg font-semibold mt-4">{item.name}</h3>
                 <p className="text-gray-500">{item.volume}</p>
                 <p className="text-lg font-bold mt-2">{item.price}</p>
+                <button
+                  name="orderCoffee"
+                  className="bg-black text-white px-4 py-2 mt-3 rounded-lg"
+                >
+                  Order Now
+                </button>
               </motion.div>
             </SwiperSlide>
           ))}
